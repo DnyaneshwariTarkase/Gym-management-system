@@ -161,7 +161,7 @@ public class GymController {
     public ModelAndView showEditSlotPage(@PathVariable Long id) {
         Slot slot = slotDao.findSlotById(id);
         ModelAndView mv = new ModelAndView("slotEntryPage");
-        mv.addObject("slotRecord", slot2);
+        mv.addObject("slotRecord", slot);
         return mv;
     }
     
